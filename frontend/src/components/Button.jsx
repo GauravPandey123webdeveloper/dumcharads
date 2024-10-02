@@ -4,7 +4,8 @@ import './Button.css';
 export default function Button({name='',handler,defaultStyle={}}) {
   return (
     <div>
-      <button className="button-50" onClick={handler} style={defaultStyle} >{name||"submit"}</button>
+      <button className="button-50" onClick={handler}
+      >{name||"submit"}</button>
     </div>
   )
 }
