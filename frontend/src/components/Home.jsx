@@ -12,7 +12,7 @@ export default function Home() {
         <form>
        
         
-        <Button name={"Register"} handler={handleSubbmit} defaultStyle={{"color":"red"}}/>
+        <Button name={"Register"} handler={handleSubbmit} defaultStyle={{"color":"white"}}/>
         </form>
       </div>
     </div>

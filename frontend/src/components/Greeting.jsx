@@ -37,6 +37,9 @@ const GreetingCard = () => {
 
     const feedback = getFeedback(score);
 
+    function handleClick(){
+        navigate('/game')
+    }
 
     useEffect(() => {
         if (score === 7) {
@@ -77,7 +80,7 @@ const GreetingCard = () => {
                     </p>
                     {score < 7 && (
                       
-                        <Button  name={"Play Again"} />
+                        <Button  name={"Play Again"} handler={handleClick} />
                         
                     )}
                 </div>
