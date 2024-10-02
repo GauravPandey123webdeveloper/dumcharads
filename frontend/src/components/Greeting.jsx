@@ -5,7 +5,6 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Button from './Button';
 
-// Function to get feedback based on score (with emojis)
 const getFeedback = (score) => {
     if (score === 1) return { text: "Excellent", emoji: "🎉" };
     if (score === 2) return { text: "Great", emoji: "👏" };
@@ -22,7 +21,7 @@ const GreetingCard = () => {
     const [score, setScore] = useState(0);
     const navigate = useNavigate();
 
-    // Load user and score from localStorage when the component mounts
+    // Get user and score from localStorage 
     useEffect(() => {
         const storedUser = localStorage.getItem('user');
         const storedScore = localStorage.getItem('score');
