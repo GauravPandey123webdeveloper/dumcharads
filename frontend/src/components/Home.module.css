@@ -16,12 +16,16 @@
     animation: gradientShift 5s ease infinite;
 }
 .heading{
-    font-family: monospace;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 30%;
-    font-size: 5rem;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 4rem;
+  background: -webkit-linear-gradient(#fff, #fdbb2d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
 }
 .home {
   height: 60%;
